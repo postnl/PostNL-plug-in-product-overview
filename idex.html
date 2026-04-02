@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<title>Voorbeeld Tabel</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #f5f5f5;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  .badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    color: white;
+  }
+  .green { background-color: #4CAF50; }
+  .red { background-color: #f44336; }
+  .yellow { background-color: #ff9800; }
+</style>
+</head>
+<body>
+
+<h2>Projectstatus</h2>
+
+<table>
+  <tr>
+    <th>Project</th>
+    <th>Status</th>
+    <th>Opmerkingen</th>
+  </tr>
+  <tr>
+    <td>API</td>
+    <td><span class="badge green">Klaar</span></td>
+    <td>Alles getest en live</td>
+  </tr>
+  <tr>
+    <td>Frontend</td>
+    <td><span class="badge yellow">Bezig</span></td>
+    <td>CSS en layout wordt aangepast</td>
+  </tr>
+  <tr>
+    <td>Backend</td>
+    <td><span class="badge red">Open</span></td>
+    <td>Moet nog worden gekoppeld</td>
+  </tr>
+</table>
+
+</body>
+</html>
